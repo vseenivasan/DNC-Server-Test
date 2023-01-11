@@ -12,7 +12,10 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }));
 
 require('./app/routes/ui.route.js')(app);
+require('./app/routes/client.route.js')(app);
 require('./app/misc/version.js')(app);
+
+console.log(__dirname);
 
 
 var server = app.listen(appconst.APP_PORT, function () {

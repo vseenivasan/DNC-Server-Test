@@ -1,0 +1,22 @@
+{"dncdb": {"users": [{"uname": "seenivasan1", "email": "seenivasanv1@mcci.com", "pwd": "myadmin1", 
+                      "role": "Super admin", "status": "Active", "clients": []},
+                     {"uname": "seenivasan2", "email": "seenivasanv2@mcci.com", "pwd": "myadmin2", 
+                      "role": "Admin", "status": "Blocked", "clients": ["Big Reuse"]},
+                     {"uname": "seenivasan3", "email": "seenivasanv3@mcci.com", "pwd": "myadmin3", 
+                      "role": "Super user", "status": "Active", "clients": []},
+                     {"uname": "seenivasan4", "email": "seenivasanv4@mcci.com", "pwd": "myadmin4", 
+                      "role": "User", "status": "Active", "clients": []},
+                     {"uname": "seenivasan5", "email": "seenivasanv5@mcci.com", "pwd": "myadmin5", 
+                      "role": "Super admin", "status": "Blocked", "clients": []}
+                      ], 
+           "clients": [{"cid": "0301", "cname": "Big Reuse", "dbcon": {"url": "https://myinfluxdb:8896",
+                        "user": "dbadmin", "pwd": "dbpwd", "dbname": "mydatadb", "mmtname": "mymmt"}, 
+                        "tags": ["site", "pile", "location"]},
+                       {"cid": "1082", "cname": "Buffalo", "dbcon": {"url": "https://myinfluxdb:8896",
+                        "user": "dbadmin", "pwd": "dbpwd", "dbname": "mydatadb", "mmtname": "mymmt"}, 
+                        "tags": ["state", "city", "street"]},
+                       {"cid": "3605", "cname": "QBG", "dbcon": {"url": "https://myinfluxdb:8896",
+                        "user": "dbadmin", "pwd": "dbpwd", "dbname": "mydatadb", "mmtname": "mymmt"}, 
+                        "tags": ["state", "city", "street"]}]
+        }
+}

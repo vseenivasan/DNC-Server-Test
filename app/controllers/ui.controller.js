@@ -1,3 +1,5 @@
+const mandb = require('../config/manage')
+
 // To get sign-up mode
 exports.signup = (req, res) => {
     res.status(200).send({message: "User Signup Accepted"}) 
@@ -27,4 +29,18 @@ exports.uiLogin = (req, res) => {
     }
 
     res.status(200).send({message: "Login success"}) 
+}
+
+
+// Manage User
+
+// 1. List all users
+exports.getAllUsers = async (req, res) => {
+    try {
+        const users = await mandb.getUser()
+        console.log("Users: ", users)
+        return res.status(200).send({"users": users})
+    }catch(err){
+        return res.status(500).send({"error": err})
+    }
 }

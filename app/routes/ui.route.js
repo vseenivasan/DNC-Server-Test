@@ -15,4 +15,13 @@ module.exports = (app) => {
 	// Login 
 	app.post('/login', uictrl.uiLogin);
 
+    // Manage User
+    app.get('/user', uictrl.getAllUsers);
+
+    // Edit User
+    app.put('/user', uictrl.editUser);
+
+
+
+
 }
