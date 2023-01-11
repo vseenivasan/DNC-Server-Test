@@ -44,3 +44,14 @@ exports.getAllUsers = async (req, res) => {
         return res.status(500).send({"error": err})
     }
 }
+
+// 2. Edit User
+exports.editUser = async (req, res) => {
+    try {
+        const users = await mandb.getUser()
+        console.log("Users: ", users)
+        return res.status(200).send({"users": users})
+    }catch(err){
+        return res.status(500).send({"error": err})
+    }
+}
